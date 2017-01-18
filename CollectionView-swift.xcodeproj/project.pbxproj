@@ -77,11 +77,11 @@
 				33C6EC1A1E2F760F001E178E /* Zoom */,
 				33C6EC161E2F760F001E178E /* Waterfall */,
 				33C6EBEF1E2F4A03001E178E /* ViewController.swift */,
-				330AAE891E2F787100378703 /* AppDelegate.swift */,
-				33C6EBF11E2F4A03001E178E /* Main.storyboard */,
 				33C6EBFF1E2F4A25001E178E /* MenuTableViewController.swift */,
+				33C6EBF11E2F4A03001E178E /* Main.storyboard */,
 				33C6EBF41E2F4A03001E178E /* Assets.xcassets */,
 				33C6EBF61E2F4A03001E178E /* LaunchScreen.storyboard */,
+				330AAE891E2F787100378703 /* AppDelegate.swift */,
 				33C6EBF91E2F4A03001E178E /* Info.plist */,
 			);
 			path = "CollectionView-swift";

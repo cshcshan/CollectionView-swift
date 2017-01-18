@@ -19,6 +19,11 @@ class ZoomCollectionViewController: UICollectionViewController {
     setupCollectionView()
   }
   
+  override func viewWillAppear(_ animated: Bool) {
+    super.viewWillAppear(animated)
+    collectionView?.scrollToItem(at: IndexPath(item: Int(arc4random_uniform(50)), section: 0), at: .centeredHorizontally, animated: false)
+  }
+  
   private func setupArray() {
     array = []
     for item in 0..<100 {
@@ -28,6 +33,10 @@ class ZoomCollectionViewController: UICollectionViewController {
   
   private func setupCollectionView() {
     collectionView?.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cell")
+//    let layout = UICollectionViewFlowLayout()
+//    layout.itemSize = CGSize(width: 50, height: collectionView!.frame.height)
+//    layout.scrollDirection = .horizontal
+//    collectionView?.collectionViewLayout = layout
   }
   
   override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -35,6 +44,7 @@ class ZoomCollectionViewController: UICollectionViewController {
   }
   
   override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+    print("indexPath.row: \(indexPath.row)")
     let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
     cell.backgroundColor = UIColor.lightGray
     for view in cell.contentView.subviews {

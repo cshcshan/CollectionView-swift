@@ -12,7 +12,6 @@
         <!--Navigation Controller-->
         <scene sceneID="aCE-rA-eRz">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="op8-1Y-MRm" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="bGg-90-gPE" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="nwJ-KC-8nL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -22,6 +21,7 @@
                         <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Z0J-aB-Gb8"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="op8-1Y-MRm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-473" y="139"/>
         </scene>
@@ -85,7 +85,7 @@
         <scene sceneID="11M-IX-24s">
             <objects>
                 <collectionViewController id="Lm7-0Z-b4P" customClass="DragAndDropCollectionViewController" customModule="CollectionView_swift" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="85Q-RE-b8i">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="85Q-RE-b8i">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -110,7 +110,7 @@
         <scene sceneID="6ZM-KH-dX8">
             <objects>
                 <collectionViewController id="fxN-Sr-nlA" customClass="ZoomCollectionViewController" customModule="CollectionView_swift" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="FdJ-WI-OTa">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="FdJ-WI-OTa">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -135,7 +135,7 @@
         <scene sceneID="9ga-BZ-vwv">
             <objects>
                 <collectionViewController id="XWY-kc-Lb0" customClass="AdsorbCollectionViewController" customModule="CollectionView_swift" customModuleProvider="target" sceneMemberID="viewController">
-                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="2Rr-gr-lP6">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="2Rr-gr-lP6">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
