@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  DragAndDropCollectionViewCell-swift
+//  CollectionView-swift
 //
-//  Created by Han Chen on 2017/1/17.
+//  Created by Han Chen on 2017/1/18.
 //  Copyright © 2017年 Han Chen. All rights reserved.
 //
 

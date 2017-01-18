@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="bGg-90-gPE">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="aCE-rA-eRz">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="op8-1Y-MRm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController id="bGg-90-gPE" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="nwJ-KC-8nL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="Z0J-aB-Gb8"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="-473" y="139"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CollectionView_swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZI3-kW-rQJ">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <connections>
+                                    <segue destination="Tp5-1N-eqQ" kind="embed" id="r9I-7r-KiF"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZI3-kW-rQJ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="QS0-3d-xpL"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ZI3-kW-rQJ" secondAttribute="bottom" id="kcL-vN-aia"/>
+                            <constraint firstItem="ZI3-kW-rQJ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="n4i-MT-PHK"/>
+                            <constraint firstAttribute="trailing" secondItem="ZI3-kW-rQJ" secondAttribute="trailing" id="sNc-Ri-dkO"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ObQ-Hp-dgB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+        <!--Menu Table View Controller-->
+        <scene sceneID="AXY-n3-6PN">
+            <objects>
+                <tableViewController id="Tp5-1N-eqQ" customClass="MenuTableViewController" customModule="CollectionView_swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="zDq-8F-Mc8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="Tp5-1N-eqQ" id="9td-Dj-JAb"/>
+                            <outlet property="delegate" destination="Tp5-1N-eqQ" id="AWt-d0-dcz"/>
+                        </connections>
+                    </tableView>
+                    <connections>
+                        <segue destination="Lm7-0Z-b4P" kind="show" identifier="DragAndDropSegue" id="EMQ-8e-077"/>
+                        <segue destination="fxN-Sr-nlA" kind="show" identifier="ZoomSegue" id="fnX-wU-XuP"/>
+                        <segue destination="XWY-kc-Lb0" kind="show" identifier="AdsorbSegue" id="TQR-Na-f9x"/>
+                        <segue destination="QWp-xP-0ic" kind="show" identifier="WaterfallSegue" id="r6V-DG-3r2"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wKc-6n-8xL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1233" y="139"/>
+        </scene>
+        <!--Drag And Drop Collection View Controller-->
+        <scene sceneID="11M-IX-24s">
+            <objects>
+                <collectionViewController id="Lm7-0Z-b4P" customClass="DragAndDropCollectionViewController" customModule="CollectionView_swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="85Q-RE-b8i">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="57S-75-xBd">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells/>
+                        <connections>
+                            <outlet property="dataSource" destination="Lm7-0Z-b4P" id="0BQ-U7-5La"/>
+                            <outlet property="delegate" destination="Lm7-0Z-b4P" id="0jk-d5-jXy"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hPM-fe-JGn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2484" y="-809"/>
+        </scene>
+        <!--Zoom Collection View Controller-->
+        <scene sceneID="6ZM-KH-dX8">
+            <objects>
+                <collectionViewController id="fxN-Sr-nlA" customClass="ZoomCollectionViewController" customModule="CollectionView_swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="FdJ-WI-OTa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="zP0-7a-UYR" customClass="ZoomFlowLayout" customModule="CollectionView_swift" customModuleProvider="target">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells/>
+                        <connections>
+                            <outlet property="dataSource" destination="fxN-Sr-nlA" id="9QQ-PF-PxE"/>
+                            <outlet property="delegate" destination="fxN-Sr-nlA" id="z1f-Pz-ZtN"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E4e-se-TIF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2484" y="-263"/>
+        </scene>
+        <!--Adsorb Collection View Controller-->
+        <scene sceneID="9ga-BZ-vwv">
+            <objects>
+                <collectionViewController id="XWY-kc-Lb0" customClass="AdsorbCollectionViewController" customModule="CollectionView_swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="2Rr-gr-lP6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="7MQ-Eu-Vxk" customClass="AdsorbFlowLayout" customModule="CollectionView_swift" customModuleProvider="target">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells/>
+                        <connections>
+                            <outlet property="dataSource" destination="XWY-kc-Lb0" id="vMO-NX-MkX"/>
+                            <outlet property="delegate" destination="XWY-kc-Lb0" id="GJv-if-CZM"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tUb-jO-ftN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2484" y="381"/>
+        </scene>
+        <!--Waterfall Collection View Controller-->
+        <scene sceneID="DJV-Le-zO4">
+            <objects>
+                <collectionViewController id="QWp-xP-0ic" customClass="WaterfallCollectionViewController" customModule="CollectionView_swift" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="2ue-wn-e75">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="A9q-7d-C7q" customClass="WaterfallLayout" customModule="CollectionView_swift" customModuleProvider="target">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells/>
+                        <connections>
+                            <outlet property="dataSource" destination="QWp-xP-0ic" id="re7-iJ-TT1"/>
+                            <outlet property="delegate" destination="QWp-xP-0ic" id="Vxs-X2-HuQ"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IaY-uz-A9G" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2484" y="1138"/>
+        </scene>
+    </scenes>
+</document>
