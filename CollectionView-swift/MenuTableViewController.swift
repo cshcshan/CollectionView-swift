@@ -11,7 +11,7 @@ import UIKit
 
 class MenuTableViewController: UITableViewController {
   
-  private let menu_Array = ["Drag and Drop Cell", "Zoom Cell", "Adsorb Cell", "Waterfall Cell"]
+  private let menu_Array = ["Drag and Drop Cell", "Zoom Cell", "Adsorb Cell", "Waterfall Cell", "A Section In A Line"]
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -43,6 +43,8 @@ class MenuTableViewController: UITableViewController {
       performSegue(withIdentifier: "AdsorbSegue", sender: nil)
     case 3:
       performSegue(withIdentifier: "WaterfallSegue", sender: nil)
+    case 4:
+      performSegue(withIdentifier: "ASectionInALineSegue", sender: nil)
     default: break
     }
   }
