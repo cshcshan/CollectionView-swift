@@ -23,6 +23,8 @@
 		33C6EC221E2F760F001E178E /* WaterfallLayoutAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C6EC191E2F760F001E178E /* WaterfallLayoutAttributes.swift */; };
 		33C6EC231E2F760F001E178E /* ZoomCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C6EC1B1E2F760F001E178E /* ZoomCollectionViewController.swift */; };
 		33C6EC241E2F760F001E178E /* ZoomFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33C6EC1C1E2F760F001E178E /* ZoomFlowLayout.swift */; };
+		33D97755230E8E3A00843F9D /* CustomCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D97753230E8E3A00843F9D /* CustomCollectionViewLayout.swift */; };
+		33D97756230E8E3A00843F9D /* CollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D97754230E8E3A00843F9D /* CollectionViewFlowLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +46,8 @@
 		33C6EC191E2F760F001E178E /* WaterfallLayoutAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterfallLayoutAttributes.swift; sourceTree = "<group>"; };
 		33C6EC1B1E2F760F001E178E /* ZoomCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoomCollectionViewController.swift; sourceTree = "<group>"; };
 		33C6EC1C1E2F760F001E178E /* ZoomFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZoomFlowLayout.swift; sourceTree = "<group>"; };
+		33D97753230E8E3A00843F9D /* CustomCollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewLayout.swift; sourceTree = "<group>"; };
+		33D97754230E8E3A00843F9D /* CollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewFlowLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +94,7 @@
 				33C6EC1A1E2F760F001E178E /* Zoom */,
 				33C6EC161E2F760F001E178E /* Waterfall */,
 				33170CD921C7D49700FE7F89 /* ASectionInALine */,
+				33D97752230E8E1000843F9D /* OtherLayouts */,
 				33C6EBEF1E2F4A03001E178E /* ViewController.swift */,
 				33C6EBFF1E2F4A25001E178E /* MenuTableViewController.swift */,
 				33C6EBF11E2F4A03001E178E /* Main.storyboard */,
@@ -135,6 +140,15 @@
 				33C6EC1C1E2F760F001E178E /* ZoomFlowLayout.swift */,
 			);
 			path = Zoom;
+			sourceTree = "<group>";
+		};
+		33D97752230E8E1000843F9D /* OtherLayouts */ = {
+			isa = PBXGroup;
+			children = (
+				33D97754230E8E3A00843F9D /* CollectionViewFlowLayout.swift */,
+				33D97753230E8E3A00843F9D /* CustomCollectionViewLayout.swift */,
+			);
+			path = OtherLayouts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -209,12 +223,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33D97756230E8E3A00843F9D /* CollectionViewFlowLayout.swift in Sources */,
 				330AAE8A1E2F787100378703 /* AppDelegate.swift in Sources */,
 				33C6EC211E2F760F001E178E /* WaterfallLayout.swift in Sources */,
 				33C6EC221E2F760F001E178E /* WaterfallLayoutAttributes.swift in Sources */,
 				33C6EBF01E2F4A03001E178E /* ViewController.swift in Sources */,
 				33170CDD21C7E2FD00FE7F89 /* ASectionInALineLayout.swift in Sources */,
 				33C6EC231E2F760F001E178E /* ZoomCollectionViewController.swift in Sources */,
+				33D97755230E8E3A00843F9D /* CustomCollectionViewLayout.swift in Sources */,
 				33C6EC241E2F760F001E178E /* ZoomFlowLayout.swift in Sources */,
 				33C6EC1E1E2F760F001E178E /* AdsorbFlowLayout.swift in Sources */,
 				33C6EC1D1E2F760F001E178E /* AdsorbCollectionViewController.swift in Sources */,
