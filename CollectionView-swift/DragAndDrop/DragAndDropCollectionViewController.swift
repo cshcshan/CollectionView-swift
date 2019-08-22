@@ -54,7 +54,7 @@ class DragAndDropCollectionViewController: UICollectionViewController {
     
   }
   
-  func handleLongPress(gesture: UILongPressGestureRecognizer) {
+  @objc func handleLongPress(gesture: UILongPressGestureRecognizer) {
     switch gesture.state {
     case .began:
       guard let selectedIndexPath = collectionView?.indexPathForItem(at: gesture.location(in: collectionView)) else {
@@ -67,6 +67,8 @@ class DragAndDropCollectionViewController: UICollectionViewController {
       collectionView?.endInteractiveMovement()
     case .cancelled, .failed, .possible:
       collectionView?.cancelInteractiveMovement()
+    default:
+      break
     }
   }
 }
